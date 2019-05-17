@@ -1,12 +1,7 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
-/* Maryam mahnoor yeh tumhari explaination ke liyay hay, sir ko urdu nai dikhani 
-I've made this link list to store the password. The one we take at the start of the program.
-Link list iss liyay use ki hay keh aik tuo dynamic list pehlay hi masla kar rahi thi aur 
-agar static link list use kartay tuo humara size limited ho jata aur fazool mein space zaaya hoti.
-Aur doosra phir humain issay aik aur link list mein shift na karna parta.
-*/
+
 
 //This makes a link list of characters
 class charnode{
@@ -236,10 +231,7 @@ public:
 	void segkeyprint(intNode *segkeytoprint){
 		segkeytoprint->printlinklist();
 	}
-	/*delete this too.
-	Agar mein 4 binary bana ke unn ko 2 mein segment kar ke dobara numbers mein convert karta (This was the original plan)
-	tuo uss mein siraf processing ziada lagti tuo mene seedhi values hi likh deen.
-	*/
+	
 	void finalkeymaker(intNode *finalkey, intNode *key2){ //This makes the final key that we need to encrypt the text file, converts a single digit into two;
 		key2->temp = key2->head;
 		intNode *t;
